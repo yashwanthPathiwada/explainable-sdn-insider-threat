@@ -323,8 +323,7 @@ def build_topology_figure(eval_df, active_mitigations):
 
     fig = go.Figure(data=[edge_trace, node_trace],
                     layout=go.Layout(
-                        title="Interactive Visual SDN Digital Twin (Live Fabric & Blast Radius)",
-                        titlefont=dict(size=15),
+                        title=dict(text="Interactive Visual SDN Digital Twin (Live Fabric & Blast Radius)", font=dict(size=15)),
                         showlegend=False,
                         hovermode='closest',
                         margin=dict(b=20, l=10, r=10, t=40),
