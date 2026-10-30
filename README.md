@@ -127,4 +127,3 @@ $$\left| \left( \phi_0 + \sum_{i=1}^{M} \phi_i \right) - f(x) \right| < 0.05$$
 
 The prototype is currently active in your background environment:
 * **Interactive Dashboard:**  https://explainable-sdn-insider-threat-2serxe4t3erjknebczdese.streamlit.app/
-* **Controller Mitigation REST API:** [**http://localhost:8080/api/status**](http://localhost:8080/api/status)
