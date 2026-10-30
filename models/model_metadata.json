@@ -1,5 +1,5 @@
 {
-  "trained_at": "2026-10-30 15:13:08",
+  "trained_at": "2026-10-30 15:38:24",
   "feature_count": 25,
   "feature_columns": [
     "bytes_per_flow",
@@ -28,12 +28,12 @@
     "privileged_port_access",
     "external_traffic_ratio"
   ],
-  "train_samples": 1556,
+  "train_samples": 1560,
   "test_samples": 390,
   "metrics": {
-    "precision": 1.0,
+    "precision": 0.8181818181818182,
     "recall": 1.0,
-    "f1_score": 1.0,
+    "f1_score": 0.9,
     "roc_auc": 1.0
   },
   "weights": {
