@@ -1,0 +1,49 @@
+{
+  "trained_at": "2026-10-30 15:13:08",
+  "feature_count": 25,
+  "feature_columns": [
+    "bytes_per_flow",
+    "packets_per_flow",
+    "mean_packet_size",
+    "total_bytes",
+    "total_packets",
+    "bytes_per_sec",
+    "packets_per_sec",
+    "flows_per_min",
+    "mean_flow_duration",
+    "inter_arrival_time_mean",
+    "inter_arrival_time_std",
+    "off_hours_ratio",
+    "unique_dst_ips",
+    "unique_dst_ports",
+    "dst_ip_entropy",
+    "dst_port_entropy",
+    "connection_frequency",
+    "failed_rare_conn_ratio",
+    "is_workstation",
+    "is_server",
+    "is_privileged_host",
+    "baseline_deviation_zscore",
+    "sensitive_server_access",
+    "privileged_port_access",
+    "external_traffic_ratio"
+  ],
+  "train_samples": 1556,
+  "test_samples": 390,
+  "metrics": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "roc_auc": 1.0
+  },
+  "weights": {
+    "supervised": 0.5,
+    "unsupervised": 0.3,
+    "context": 0.2
+  },
+  "thresholds": {
+    "low": 0.35,
+    "medium": 0.65,
+    "high": 0.85
+  }
+}

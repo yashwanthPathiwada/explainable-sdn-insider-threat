@@ -1,0 +1,42 @@
+name: End-to-End Pipeline CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+        cache: 'pip'
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Test Feature Engineering Pipeline
+      run: |
+        python feature_engineering.py
+
+    - name: Test ML Detection & Risk Fusion Training
+      run: |
+        python train_detector.py
+
+    - name: Test SHAP & LIME Explainability Layer
+      run: |
+        python explainability.py
+
+    - name: Verify Dashboard Dry-Run
+      run: |
+        streamlit run app.py --server.headless true &
+        sleep 5
+        curl --fail http://localhost:8501/_stcore/health

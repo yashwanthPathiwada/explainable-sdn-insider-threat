@@ -1,0 +1,39 @@
+# Python Bytecode and Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# IDE & OS Specific
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Streamlit Local Runtime
+.streamlit/secrets.toml
+
+# IMPORTANT: Keep pre-trained models and demo database so repo runs out-of-the-box!
+!models/*.pkl
+!models/*.json
+!data/flow_records.db
