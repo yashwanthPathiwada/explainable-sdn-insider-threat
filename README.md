@@ -126,11 +126,5 @@ $$\left| \left( \phi_0 + \sum_{i=1}^{M} \phi_i \right) - f(x) \right| < 0.05$$
 ## ⚡ Live Execution & Dashboard Access
 
 The prototype is currently active in your background environment:
-* **Interactive Dashboard:** [**http://localhost:8501**](http://localhost:8501)
+* **Interactive Dashboard:**  https://explainable-sdn-insider-threat-2serxe4t3erjknebczdese.streamlit.app/
 * **Controller Mitigation REST API:** [**http://localhost:8080/api/status**](http://localhost:8080/api/status)
-
-To relaunch from scratch on any machine:
-```bash
-cd C:\Users\pathi\.gemini\antigravity\scratch\explainable-sdn-insider-threat
-python run_demo.py
-```
